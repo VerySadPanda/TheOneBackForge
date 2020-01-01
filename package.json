@@ -1,0 +1,36 @@
+{
+  "name": "theonebackforge",
+  "version": "1.0.0",
+  "description": "TheOneBackForge",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js --exec babel-node",
+    "release": "npm run clean && npm run build && npm run serve",
+    "clean": "rm -rf dist && mkdir dist",
+    "build": "babel . -s -D -d dist --ignore node_modules",
+    "serve": "node dist/server.js"
+  },
+  "author": "VerySadPanda",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/VerySadPanda/TheOneBackForge.git"
+  },
+  "keywords": [
+    "backend"
+  ],
+  "bugs": {
+    "url": "https://github.com/VerySadPanda/TheOneBackForge/issues"
+  },
+  "homepage": "https://github.com/VerySadPanda/TheOneBackForge#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "apoc": "^2.1.6",
+    "express": "^4.17.1",
+    "neo4j-driver": "^4.0.1"
+  }
+}
