@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "apoc": "^2.1.6",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "neo4j-driver": "^4.0.1"
   }
 }
